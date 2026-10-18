@@ -92,11 +92,11 @@ Recorded test-set accuracy in the current notebook:
 | Extra Trees | 64.76% |
 | XGBoost | 67.62% |
 
-The Streamlit app currently loads the saved **Extra Trees** model, not the highest-accuracy model in the notebook. These results are from one split and accuracy alone is not sufficient to judge a credit-risk model. Consider adding precision, recall, F1-score, confusion matrix, ROC-AUC, and particular attention to the recall of the “bad risk” class before drawing conclusions.
+The Streamlit app is loads the saved **XGBoost** model.
 
 ## Data and limitations
 
-The notebook reads `german_credit_data.csv`. Before publishing the dataset, check the original source's licence and redistribution terms, and cite the source in this README. Do not upload personal or confidential data.
+The notebook reads `german_credit_data.csv`.
 
 - Results depend on the dataset, preprocessing, split, and hyperparameters.
 - Encoded categorical values must use the same fitted encoders used during training.
